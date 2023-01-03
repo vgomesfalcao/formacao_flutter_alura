@@ -123,7 +123,7 @@ class _FormScreenState extends State<FormScreen> {
                   ElevatedButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        TaskInherited.of(widget.taskContext)!.NewTask(
+                        TaskInherited.of(widget.taskContext)!.newTask(
                             nameController.text,
                             imageController.text,
                             int.parse(difficultyController.text));
